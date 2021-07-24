@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- default -->
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <!-- pro -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <!-- my file -->
+    <link rel="stylesheet" href="css/Donkuc Center.css">
+    <title>Hoi Nghi</title>
+</head>
+
+<body ng-app="myApp">
+<!-- nav -->
+<nav class="navbar navbar-expand-lg sticky-top scrolling-navbar">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="home.html">
+            <img src="img/logo.png" width="100" alt="" loading="lazy" />
+        </a>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="YenTiec.html">YẾN TIỆC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="HoiNghi.html">HỘI NGHỊ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="UuDai.html">ƯU ĐÃI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="TinTuc.html">TIN TỨC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="DatTiec.html">LIÊN HỆ</a>
+                </li class="nav-item">
+                <div class="nav-link navlink" id="google_translate_element"></div>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>     <!-- header -->
+    <header>
+        <img class="img-fluid"
+            src="https://theadora.vn/skin/front/adora/images/premium/gioi-thieu-cover-adora-premium.jpg" alt="">
+        <h1 class="header-gradient">.</h1>
+    </header>
+    <!-- body -->
+    <main>
+        <!--yen Tiec tabs -->
+        <div class="text-center classic-tabs container-md">
+            <ul class="justify-content-center nav mb-5" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tabs-tiec-cuoi" data-toggle="tab" href="#hn" role="tab"
+                        aria-controls="home" aria-selected="true">Hội nghị & Sự kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" id="tabs-tiec-cuoi" data-toggle="tab" href="#tl" role="tab"
+                        aria-controls="profile" aria-selected="false">Triển lãm</a>
+                </li>
+            </ul>
+            <!-- content -->
+            <div class="tab-content" id="myTabContent">
+                <!-- hoi nghi -->
+                <div class="tab-pane fade show active" id="hn" role="tabpanel" aria-labelledby="home-tab">
+
+                    <h3 class="textblue font-weight-bold">Hội nghị & sự kiện tại<br>
+                        The DONKUC Center</h3>
+                    <!--  -->
+                    <div class="row my-5 pb-md-5">
+                        <div class="col-md-6 col-12 text-left px-md-5">
+                            <div class="px-md-3">
+                                <p class="text-black-50">KHÔNG GIAN</p>
+                                <h3 class="textblue my-5">Không gian hoàn hảo cho sự kiện tầm cỡ - đỉnh cao</h3>
+                                <p style="text-align: justify;">Đối với các doanh nghiệp, việc lựa chọn địa điểm tổ chức
+                                    sự
+                                    kiển không dừng lại ở vị trí; mà còn cần lựa chọn đơn vị nào thể hiện được đẳng cấp
+                                    và
+                                    sự chu đáo dành cho khách mời. Việc lựa chọn đối tác tổ chức Sự kiện - Hội nghị cũng
+                                    chính là khẳng định danh tiếng và quy tín của doanh nghiệp.
+                                </p>
+                                <p style="text-align: justify;" class="mt-4">
+                                    The DONKUC Center với phong cách kiến trúc Châu Âu sang trọng, đẳng cấp 5*, không
+                                    gian
+                                    lại linh hoạt và có sức chứa lớn, đa dạng, phù hợp cho nhiều loại hình sự kiện. Với
+                                    tiêu
+                                    chuẩn phục vụ chuyên nghiệp, the DONKUC Center xứng đáng là lựa chọn cho những sự
+                                    kiện
+                                    tầm cỡ.</p>
+
+                                <ul style="list-style-type: none;">
+                                    <li class="">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-01.png" alt="">
+                                        <span>4,3 KM TỪ TRUNG TÂM THÀNH PHỐ</span>
+                                    </li>
+                                    <li class="clearfix child-2">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-02.png" alt="">
+                                        <span>6,7 KM TỪ SÂN BAY QUỐC TẾ TÂN SƠN NHẤT</span>
+                                    </li>
+                                    <li class="clearfix child-3">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-03.png" alt="">
+                                        <span>10,000M2 VỚI 20 SẢNH TIỆC LỚN NHỎ</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 px-lg-3 mt-5 mt-lg-0">
+                            <img src="https://theadora.vn/skin/front/adora/images/hoi-nghi-02.jpg" alt=""
+                                class="img-fluid px-lg-5">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="px-lg-5">
+                        <div class="px-lg-5">
+                            <div class="row px-lg-5">
+                                <div class="col-md-6 col-12 px-lg-5">
+                                    <h3 class="textblue text-left pr-md-5">Lý tưởng <span class="text-black-50">cho
+                                            những
+                                            sự kiện</span> có lượng
+                                        khách mời lớn</h3>
+                                </div>
+                                <div class="col-md-6 col-12 px-lg-5">
+                                    <p style="text-align: justify;">
+                                        Hệ thống các sảnh tiệc được thiết kế tinh tế với trần cao lên đến 9m, không bị
+                                        giới
+                                        hạn bởi các cột chắn cùng không gian sang trọng phù hợp với những hội nghị lớn,
+                                        những buổi yến tiệc cao cấp và những buổi triển lãm mang đậm tính nghệ thuật.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <p class="text-black-50 text-uppercase text-left mt-4">
+                        TIỆN ÍCH
+                    </p>
+                    <div class="mt-4 mb-5 row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="view overlay">
+                                <img src="img/tiec-trien-lam-1.jpg" class="img-fluid " alt="smaple image">
+                                <div class="tieu-de-all textblue text-center">
+                                    <p>Vị trí đắc địa</p>
+                                </div>
+                                <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                    <div class="text-white textblue text-center text-khung">
+                                        <h4 class="white-text text-center font-weight-bold">Vị trí đắc
+                                            địa</h4>
+                                        <hr class="w-25" style="border: thin solid tan;">
+                                        <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Toạ lạc tại vị trí
+                                            sầm uất
+                                            nhất Thành phố Hồ Chí Minh, The DONKUC Center là địa điểm lý tưởng để tổ
+                                            chức
+                                            các sự kiện, hội nghị đẳng cấp trong nước và quốc tế.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-md-4 mb-4">
+                            <div class="view overlay">
+                                <div class="view overlay">
+                                    <img src="img/tiec-trien-lam-2.jpg" class="img-fluid " alt="smaple image">
+                                    <div class="tieu-de-all textblue text-center">
+                                        <p>Trang thiết bị
+                                            hiện đại</p>
+                                    </div>
+                                    <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                        <div class="text-white textblue text-center text-khung">
+                                            <h4 class="white-text text-center font-weight-bold">Trang thiết bị
+                                                hiện đại</h4>
+                                            <hr class="w-25" style="border: thin solid tan;">
+                                            <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Hệ thống màn
+                                                hình L.E.D hiện
+                                                đại nhất tạo nên một buổi tiệc hoàn hảo đậm dấu ấn cá nhân của từng
+                                                doanh
+                                                nghiệp.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-md-4 mb-4">
+                            <div class="view overlay">
+                                <div class="view overlay">
+                                    <img src="img/tiec-trien-lam-3.jpg" class="img-fluid " alt="smaple image">
+                                    <div class="tieu-de-all textblue text-center">
+                                        <p>Công suất sảnh</p>
+                                    </div>
+                                    <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                        <div class="text-white textblue text-center text-khung">
+                                            <h4 class="white-text text-center font-weight-bold">Công suất sảnh</h4>
+                                            <hr class="w-25" style="border: thin solid tan;">
+                                            <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Với sức chứa
+                                                tối đa lên đến
+                                                10.000 khách tham dự cùng một lúc, The DONKUC Center mang đến không gian
+                                                hoàn
+                                                hảo để mỗi sự kiện để lại dấu ấn đáng nhớ nhất.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <p class="text-black-50 text-uppercase text-left">
+                        Thư viện ảnh
+                    </p>
+                    <div id="thuvienhoinghi1" class="carousel slide carousel-fade pb-5" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-1.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-2.jpg"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-3.jpg"
+                                    alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/tiec-trien-lam-07.jpg"
+                                    alt="Four slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#thuvienhoinghi1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#thuvienhoinghi1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- trien lam -->
+                <div class="tab-pane fade show" id="tl" role="tabpanel" aria-labelledby="home-tab">
+
+                    <h3 class="textblue font-weight-bold">Triển lãm tại<br>
+                        The DONKUC Center</h3>
+                    <!--  -->
+                    <div class="row my-5 pb-md-5">
+                        <div class="col-md-6 col-12 text-left px-md-5">
+                            <div class="px-md-3">
+                                <p class="text-black-50">KHÔNG GIAN</p>
+                                <h3 class="textblue my-5">Không gian hoàn hảo cho triển lãm</h3>
+                                <p style="text-align: justify;">Đối với các doanh nghiệp, nơi tổ chức tiệc phải thể hiện
+                                    được đẳng cấp và sự chu đáo của doanh nghiệp dành cho khách hàng cũng như nâng cao
+                                    danh tiếng và uy tín của công ty.
+                                </p>
+                                <p style="text-align: justify;" class="mt-4">
+                                    Với lối kiến trúc châu Âu sang trọng, đẳng cấp 5 sao, không gian đa dạng phù hợp cho
+                                    nhiều loại hình sự kiện cùng tiêu chuẩn dịch vụ chuyên nghiệp – The DONKUC Center
+                                    trở
+                                    thành sự lựa chọn cho những sự kiện lớn mang tầm quốc tế.</p>
+
+                                <ul style="list-style-type: none;">
+                                    <li class="">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-01.png" alt="">
+                                        <span>4,3 KM TỪ TRUNG TÂM THÀNH PHỐ</span>
+                                    </li>
+                                    <li class="clearfix child-2">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-02.png" alt="">
+                                        <span>6,7 KM TỪ SÂN BAY QUỐC TẾ TÂN SƠN NHẤT</span>
+                                    </li>
+                                    <li class="clearfix child-3">
+                                        <img class="icon"
+                                            src="https://theadora.vn/skin/front/adora/images/element-03.png" alt="">
+                                        <span>10,000M2 VỚI 20 SẢNH TIỆC LỚN NHỎ</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 px-lg-3 mt-5 mt-lg-0">
+                            <img src="https://theadora.vn/skin/front/adora/images/hoi-nghi-02.jpg" alt=""
+                                class="img-fluid px-lg-5">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="px-lg-5">
+                        <div class="px-lg-5">
+                            <div class="row px-lg-5">
+                                <div class="col-md-6 col-12 px-lg-5">
+                                    <h3 class="textblue text-left pr-md-5">Lý tưởng <span class="text-black-50">cho
+                                            những
+                                            sự kiện</span> có lượng
+                                        khách mời lớn</h3>
+                                </div>
+                                <div class="col-md-6 col-12 px-lg-5">
+                                    <p style="text-align: justify;">
+                                        Hệ thống các sảnh tiệc được thiết kế tinh tế với trần cao lên đến 9m, không bị
+                                        giới
+                                        hạn bởi các cột chắn cùng không gian sang trọng phù hợp với những hội nghị lớn,
+                                        những buổi yến tiệc cao cấp và những buổi triển lãm mang đậm tính nghệ thuật.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <p class="text-black-50 text-uppercase text-left mt-4">
+                        TIỆN ÍCH
+                    </p>
+                    <div class="mt-4 mb-5 row mb-5">
+                        <div class="mt-4 mb-5 row mb-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="view overlay">
+                                    <img src="img/tiec-trien-lam-1.jpg" class="img-fluid " alt="smaple image">
+                                    <div class="tieu-de-all textblue text-center">
+                                        <p>Vị trí đắc địa</p>
+                                    </div>
+                                    <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                        <div class="text-white textblue text-center text-khung">
+                                            <h4 class="white-text text-center font-weight-bold">Vị trí đắc
+                                                địa</h4>
+                                            <hr class="w-25" style="border: thin solid tan;">
+                                            <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Toạ lạc tại vị
+                                                trí
+                                                sầm uất
+                                                nhất Thành phố Hồ Chí Minh, The DONKUC Center là địa điểm lý tưởng để tổ
+                                                chức
+                                                các sự kiện, hội nghị đẳng cấp trong nước và quốc tế.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-4 mb-4">
+                                <div class="view overlay">
+                                    <div class="view overlay">
+                                        <img src="img/tiec-trien-lam-2.jpg" class="img-fluid " alt="smaple image">
+                                        <div class="tieu-de-all textblue text-center">
+                                            <p>Trang thiết bị
+                                                hiện đại</p>
+                                        </div>
+                                        <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                            <div class="text-white textblue text-center text-khung">
+                                                <h4 class="white-text text-center font-weight-bold">Trang thiết bị
+                                                    hiện đại</h4>
+                                                <hr class="w-25" style="border: thin solid tan;">
+                                                <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Hệ thống
+                                                    màn
+                                                    hình L.E.D hiện
+                                                    đại nhất tạo nên một buổi tiệc hoàn hảo đậm dấu ấn cá nhân của từng
+                                                    doanh
+                                                    nghiệp.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-4 mb-4">
+                                <div class="view overlay">
+                                    <div class="view overlay">
+                                        <img src="img/tiec-trien-lam-3.jpg" class="img-fluid " alt="smaple image">
+                                        <div class="tieu-de-all textblue text-center">
+                                            <p>Công suất sảnh</p>
+                                        </div>
+                                        <div class="mask flex-center" style="background: rgba(7, 40, 139, 0.781);">
+                                            <div class="text-white textblue text-center text-khung">
+                                                <h4 class="white-text text-center font-weight-bold">Công suất sảnh</h4>
+                                                <hr class="w-25" style="border: thin solid tan;">
+                                                <p style="text-align: justify;" class="px-5 px-lg-5 px-sm-2">Với sức
+                                                    chứa
+                                                    tối đa lên đến
+                                                    10.000 khách tham dự cùng một lúc, The DONKUC Center mang đến không
+                                                    gian
+                                                    hoàn
+                                                    hảo để mỗi sự kiện để lại dấu ấn đáng nhớ nhất.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <p class="text-black-50 text-uppercase text-left">
+                        Thư viện ảnh
+                    </p>
+                    <div id="thuvienhoinghi" class="carousel slide carousel-fade pb-5" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-1.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-2.jpg"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/hoi-nghi-su-kien-slide-3.jpg"
+                                    alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://theadora.vn/skin/front/adora/images/tiec-trien-lam-07.jpg"
+                                    alt="Four slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#thuvienhoinghi" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#thuvienhoinghi" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- tabs -->
+    </main>
+    <!-- footer -->
+    <footer style="background:#152b68;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="text-white mt-4 text-footer col-md-7">
+                    <p>LÝ DO LỰA CHỌN CHÚNG TÔI</p>
+                    <h2 style="color: tan;">The Donkuc Center</h2>
+                    <h4 class="w-75">truyền cảm hứng cho những sự kiện sáng tạo đỉnh cao</h4>
+                    <p class="w-75 mt-5">The Donkuc Center luôn hướng đến giá trị hoàn hảo cho mỗi sự kiện được đầu tư
+                        và lên kế hoạch kĩ lưỡng</p>
+                </div>
+                <!-- <div class="col-md-3">
+                <div class="text-white mt-4 ">
+                    <p class="mb-0" style="color: tan;">HOTLINE TIỆC CƯỚI</p>
+                    <h4 class="mb-4">(012) 12 1212 12</h4>
+                    <p class="mb-0" style="color: tan;">HOTLINE TIỆC CƯỚI</p>
+                    <h4>(012) 12 222 112</h4>
+                </div>
+            </div> -->
+                <div class="mt-4 col-md-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.473803958702!2d106.63278245098692!3d10.774977062127629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea1618ad3bd%3A0xb51a3a0e117d81c7!2zMjggVHLhu4tuaCDEkMOsbmggVGjhuqNvLCBIb8OgIFRoYW5oLCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1602952332021!5m2!1svi!2s"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" width="100%"
+                        height="100%" tabindex="0"></iframe>
+                </div>
+            </div>
+    
+            <hr class="my-5 row" style="background: white;">
+    
+            <div class="row text-white px-5 px-md-0">
+                <!--  -->
+                <div class="col-md-4 col-12 text-center text-md-left mb-4">
+                    <p>KẾT NỐI VỚI THE DONKUC</p>
+                    <a href="#!"><i class="fab fa-facebook-square mr-3"></i> Facebook</a> <br>
+                    <a href="#!"><i class="fab fa-youtube-square mr-3"></i> YouTube</a> <br>
+                    <a href="#!"><i class="fab fa-instagram mr-3"></i> Instagram</a>
+                </div>
+                <!--  -->
+                <div class="col-md-4 col-12 text-center">
+                    <img src="img/logo-footer.png">
+                </div>
+                <!--  -->
+                <div class="col-md-4 col-12 text-center text-md-right pt-5">
+                    <p style="color: tan;">© 2021 <a href="http://facebook.com/dnkphuc">Phuc Do</a> - All right
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- my script -->
+<script src="js/Donkuc Center.js"></script>
+<!-- translate -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</html>

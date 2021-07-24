@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- default -->
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <!-- pro -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <!-- my file -->
+    <link rel="stylesheet" href="css/Donkuc Center.css">
+    <title>Book</title>
+</head>
+
+<body ng-app="myApp">
+<!-- nav -->
+<nav class="navbar navbar-expand-lg sticky-top scrolling-navbar">
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="home.html">
+            <img src="img/logo.png" width="100" alt="" loading="lazy" />
+        </a>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="YenTiec.html">YẾN TIỆC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="HoiNghi.html">HỘI NGHỊ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="UuDai.html">ƯU ĐÃI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="TinTuc.html">TIN TỨC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navlink" href="DatTiec.html">LIÊN HỆ</a>
+                </li class="nav-item">
+                <div class="nav-link navlink" id="google_translate_element"></div>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>     <!-- header -->
+    <header>
+        <img class="img-fluid" src="img/dat-tiec.jpg" alt="">
+    </header>
+    <!-- body -->
+    <div style="background: #152b68;">
+        <form name="validateForm" method="GET" class="myform text-white container-fluid px-md-5" ng-controller="myCtrl">
+            <div class="row px-lg-5 mx-lg-5 px-4">
+                <!-- 6 -->
+                <div class="row col-md-12 col-lg-6 mt-5">
+
+                    <div class="col-md-12 mb-3 text-monospace">
+                        <h4 class="">THÔNG TIN LIÊN HỆ</h4>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Họ và tên*</label>
+                        <input type="text" class="form-control" name="txtName" ng-model="txtName" required>
+                        <span ng-hide="validateForm.txtName.$valid">Vui lòng điền
+                            tên</span>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Số Điện Thoại*</label>
+                        <input type="number" ng-minlength="10" class="form-control" id="sdt" name="sdt" ng-model="sdt"
+                            required>
+                        <span ng-hide="validateForm.sdt.$valid">Vui lòng điền SDT trên 10 số</span>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="email" name="email" ng-model="email" required>
+                        <span ng-show="validateForm.email.$error.required">Vui lòng điền email</span>
+                        <span ng-show="validateForm.email.$error.email">Email không hợp lệ.</span>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Công ty</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+                <!-- 6 -->
+                <div class="row col-md-12 col-lg-6 mt-5">
+
+                    <div class="col-md-12 mb-3 text-monospace">
+                        <h4 class="">THÔNG TIN SỰ KIỆN</h4>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Ngày tổ chức*</label>
+                        <input ng-model="ngay" name="ngay" type="text" class="form-control datepicker" required>
+                        <span ng-hide="validateForm.ngay.$invalid">Chọn ngày tổ chức</span>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="" class="form-label">Số lượng khách*</label>
+                        <input type="number" ng-change="change()" min="200" class="form-control" id="slk" name="slk"
+                            ng-model="slk" required>
+                        <span ng-hide="validateForm.slk.$valid">Vui lòng điền số lượng (ít nhất 200)</span>
+                    </div>
+
+                    <div class="mb-3 col-md-6 ">
+                        <label for="" class="form-label">Loại hình sự kiện*</label>
+                        <select class="form-control" name="loai" select ng-model="loai"
+                            ng-options="x for (x, y) in loais" required>
+                        </select>
+                        <span ng-hide="validateForm.loai.$valid">Chọn loại sự kiện</span>
+                    </div>
+
+                    <div class="mb-3 col-md-3 ">
+                        <label for="" class="form-label">Loại bia*</label>
+                        <select class="form-control" name="bia" select ng-model="bia" ng-options="x for (x, y) in bias"
+                            required>
+                        </select>
+                        <span ng-hide="validateForm.bia.$valid">Chọn loại bia</span>
+                    </div>
+                    <div class="mb-3 col-md-3 ">
+                        <label for="" class="form-label">Số lượng(Thùng)*</label>
+                        <input type="number" min="10" class="form-control" id="slb" name="slb" ng-model="slb" required>
+                        <span ng-hide="validateForm.slb.$valid">Điền số lượng bia <br> (it nhất 10)</span>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="row col-md-6 mt-5">
+
+                    <div class="mb-3 col-md-12">
+                        <label for="" class="form-label">Ghi Chú</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+                </div>
+                <!-- 6 -->
+                <div class="row col-md-6 mt-5">
+                    <div class="mb-3 col-md-12">
+                        <label for="" class="form-label">Ước tính số tiền phải trả</label>
+                        <input type="text" value="{{(loai.pricetiec)+(slk*500000)+(slb*(bia.pricebia))|number}} VND"
+                            disabled></input>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-12 pr-md-4">
+                    <button ng-disabled="!(slb)||!(slk)||!(bia)||!(loai)||!(email)||!(sdt)||!(txtName)" type="submit"
+                        class="btn btn-outline-orange float-md-right mr-md-5" data-toggle="modal"
+                        data-target="#success">
+                        <p class="text-white mb-0">Gửi thông tin</p>
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="success" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content" style="border:none;border-radius: 5px;">
+                            <div class="modal-header" style=" background: #1ab394;">
+                                <p class="modal-title mx-auto">
+                                    <img class="img-fluid"
+                                        src="https://lh3.googleusercontent.com/-Zxh4srAEtU0/Wp0cZV-PJuI/AAAAAAAAD4E/En5x5c53s44jzvG8M0sSyFZXoRhGXfBzwCL0BGAYYCw/h100/2018-03-05.png">
+                                </p>
+                            </div>
+                            <div class="modal-body">
+                                <h3 style="color:#1ab394" class="text-center text-uppercase">
+                                    Gửi thành công
+                                </h3>
+                                <p class="text-center" style="color:#555555;">Cảm ơn khách hàng
+                                    <strong style="font-weight:500;font-size:16px;color: #222222;">
+                                        {{txtName}}
+                                    </strong>
+                                    <br> SDT
+                                    <strong style="font-weight:500;font-size:16px;color: #222222;">
+                                        {{sdt}}
+                                    </strong> <br> đã gửi thông tin thành công!
+                                </p>
+                                <p class="text-center" style="color:#555555;">Cần thanh toán
+                                    <strong style="font-weight:500;font-size:16px;color: #222222;">
+                                        {{(loai.pricetiec)+(slk*500000)+(slb*(bia.pricebia))|number}}
+                                    </strong> VND
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button onClick="window.location.reload();" type="button" class="btn btn-default"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer style="background:#152b68;">
+        <div class="px-5 pt-1 mx-md-5">
+
+            <hr class="my-5 row" style="background: white;">
+
+            <div class="row text-white px-5 px-md-0">
+                <!--  -->
+                <div class="col-md-4 col-12 text-center text-md-left mb-4">
+                    <p>KẾT NỐI VỚI THE DONKUC</p>
+                    <a href="#!"><i class="fab fa-facebook-square mr-3"></i> Facebook</a> <br>
+                    <a href="#!"><i class="fab fa-youtube-square mr-3"></i> YouTube</a> <br>
+                    <a href="#!"><i class="fab fa-instagram mr-3"></i> Instagram</a>
+                </div>
+                <!--  -->
+                <div class="col-md-4 col-12 text-center">
+                    <img src="img/logo-footer.png">
+                </div>
+                <!--  -->
+                <div class="col-md-4 col-12 text-center text-md-right pt-5">
+                    <p style="color: tan;">© 2021 <a href="http://facebook.com/dnkphuc">Phuc Do</a> - All right
+                        reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- my script -->
+<script src="js/Donkuc Center.js"></script>
+<!-- translate -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+</html>
